@@ -1,4 +1,4 @@
-# A Docker image with Codeception and PhantomJS toolkits
+# A Docker image with Codeception and PhantomJS toolkit
 
 ## Usage
 
