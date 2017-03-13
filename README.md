@@ -1,6 +1,6 @@
-# A Docker image with Codeception and PhantomJS toolkit
+A Docker image with Codeception and PhantomJS toolkit.
 
-## Usage
+# Usage
 
 Navigate to a directory with a ```codeception.yml``` file and run:
 
