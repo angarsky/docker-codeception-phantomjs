@@ -25,14 +25,15 @@ RUN set -x  \
     # Clean up
  && apt-get clean \
  && rm -rf /tmp/* /var/lib/apt/lists/*
+# The end of the PhantomJS installation.
 
-# Install Supervisor
+# Install Supervisor.
 RUN apt-get update && apt-get -y install supervisor && \
   mkdir -p /var/log/supervisor && \
   mkdir -p /etc/supervisor/conf.d
 
 RUN { \
-		echo '[supervisord]'; \
+	echo '[supervisord]'; \
         echo 'nodaemon=true'; \
         echo '[program:phantomjs]'; \
         echo 'command=/bin/bash -c "phantomjs --webdriver=4444"'; \
