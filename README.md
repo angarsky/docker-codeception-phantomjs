@@ -22,7 +22,7 @@ docker exec -it angarsky-codeception-phantomjs composer install
 
 # Bitbucket Pipelines
 
-This image can be used in the Bitbucket Pipelines.
+This image can be used for the Bitbucket Pipelines:
 
 ```
 image: angarsky/codeception-phantomjs
