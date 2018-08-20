@@ -32,6 +32,9 @@ RUN apt-get update && apt-get -y install supervisor && \
   mkdir -p /var/log/supervisor && \
   mkdir -p /etc/supervisor/conf.d
 
+# Install ssh-client.
+RUN apt-get update && apt-get install ssh-client -y
+
 RUN { \
 	echo '[supervisord]'; \
         echo 'nodaemon=true'; \
